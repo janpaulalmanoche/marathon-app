@@ -29,7 +29,7 @@
                         {{r.user_w.last_name}}
                     </td>
                     <td class="text-center">
-
+                        {{r.finish_time}}
                     </td>
                     <td class="text-center">
                         {{r.participant_no}}
