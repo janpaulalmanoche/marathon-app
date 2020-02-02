@@ -14,6 +14,7 @@
 
                     <th class="text-center">Place</th>
                     <th class="text-center">Participant Name</th>
+                    <th class="text-center">Time Finished</th>
                     <th class="text-center">No.</th>
 
                 </tr>
@@ -26,6 +27,9 @@
                     <td class="text-center">
                         {{r.user_w.first_name}}
                         {{r.user_w.last_name}}
+                    </td>
+                    <td class="text-center">
+
                     </td>
                     <td class="text-center">
                         {{r.participant_no}}
