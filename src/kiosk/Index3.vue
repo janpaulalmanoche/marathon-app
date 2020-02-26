@@ -1,5 +1,5 @@
 <template>
-    <div class="q-pa-md" style="margin-left:16%">
+    <div class="q-pa-md" style="margin-left:24%">
 
         <div class="card">
     <q-page style="max-width: 800px;margin-top:5px;" >
