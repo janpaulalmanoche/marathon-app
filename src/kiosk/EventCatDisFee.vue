@@ -43,11 +43,13 @@
     import {mapState} from 'vuex'
     import axios from 'axios';
     // import Vuex from 'vuex'
+
+    let api =  'http://192.168.1.46' + '/api';
     export default {
         // name: 'MyLayout',
         afterCreate(){
             // alert('jaja')
-            // axios.get('http://127.0.0.1:8000/api/event-cat/'+ event_id)
+            // axios.get( api + '/event-cat/'+ event_id)
                 // .then( (response)=>{
                 //     console.log(response.data)
                 //     this.$store.dispatch('SET_EVENTS_A',response.data)
@@ -66,7 +68,7 @@
             set_event_cat_dis_fee_id($id , $cat_name ,$distance){
                 // alert('haha')
                 //     this.$store.dispatch('SET_EVENT_CAT_DIS_FEE_ID_A',$id)
-                axios.get('http://127.0.0.1:8000/api/ranking/'+ $id)
+                axios.get(api + '/ranking/'+ $id)
                     .then( (response) =>{
 
                         this.$store.dispatch('SET_RANKING_BY_EVENT_CAT_DIS__FEE_ID_A',response.data)

@@ -51,6 +51,9 @@
     import {mapState} from 'vuex'
     import axios from 'axios';
     // import Vuex from 'vuex'
+
+    
+   let api =  'http://192.168.1.46' + '/api';
     export default {
         // name: 'MyLayout',
         mounted: function () {
@@ -71,7 +74,7 @@
 
             req(){
         // alert('haha')
-                axios.get('http://127.0.0.1:8000/api/ranking/'+ this.$store.state.marathon.evet_cat_dis_fee_id)
+                axios.get(api + '/ranking/'+ this.$store.state.marathon.evet_cat_dis_fee_id)
                     .then( (response) => {
                             // alert('hsha')
                         this.$store.dispatch('SET_RANKING_BY_EVENT_CAT_DIS__FEE_ID_A', response.data)

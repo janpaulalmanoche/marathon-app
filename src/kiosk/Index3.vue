@@ -58,7 +58,7 @@
     // import {mapState} from 'vuex'
     import axios from 'axios';
 
-    let api = 'http://127.0.0.1:8000' + '/api/';
+   let api =  'http://192.168.1.46' + '/api';
     // let api = 'https://2525afa1.ngrok.io'+'/api/';
     export default {
 
@@ -82,7 +82,7 @@
             send(){
                 // alert('haha')
 
-                        axios.get('http://127.0.0.1:8000/api/send/'+ this.rfid)
+                        axios.get(api + '/send/'+ this.rfid)
                             .then( (response)=>{
                             this.showNotif('top',response.data.place )
                                 this.first_name = response.data.data.user.first_name,
